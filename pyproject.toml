@@ -1,0 +1,12 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "maturin_musl_fail"
+requires-python = ">=3.7"
+
+
+[tool.maturin]
+features = ["pyo3/extension-module", "python"]
+python-source = "python"
